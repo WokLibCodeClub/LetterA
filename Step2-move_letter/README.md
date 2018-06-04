@@ -32,7 +32,7 @@ Create the function update using this code, and put it just above the function d
 def update():
     x = x + 1
 ```
-The Python code inside the function looks like mathematical nonsense, but to Python it means take the present value of the variable x, add 1 to it and put this new value back in the variable x. If you remember that x is the x coordinate of the letter in the window what effect do you think this change of variable x would have on the position of the letter?
+The Python code inside the function looks like mathematical nonsense, but to Python it means: take the present value of the variable x, add 1 to it and put this new value back in the variable x. If you remember that x is the x coordinate of the letter in the window what effect do you think this change of variable x would have on the position of the letter?
 
 
 Scope of variables
