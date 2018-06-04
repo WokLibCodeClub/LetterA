@@ -12,7 +12,7 @@ This code will create new variables and give them initial values which represent
 x = WIDTH/2
 y = HEIGHT/2
 
-These statements need to be placed under the WIDTH and HEIGHT statements.
+These statements need to be placed under the WIDTH and HEIGHT statements because they use the values of WIDTH and HEIGHT in the calculation.
 
 In the draw function we need to change the coordinates in center= so that for the x coordinate it will use the variable x, and for the y coordinate it will use the variable y.
 
