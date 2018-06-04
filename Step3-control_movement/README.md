@@ -39,8 +39,6 @@ This uses a Python statement called (not surprisingly) an **if** statement.
 
 To make this work we first need some code which will tell us if the right arrow is being pressed, then we write some code to say what should happen when the right arrow is being pressed.
 
-Pygame Zero gives a way of telling if the right arrow is being pressed using 'keyboard.right'. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun.
-
 An if statement starts with the word **if**, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the if statement must be indented.
 
 Here is how the update function would look with an if statement:
@@ -51,7 +49,7 @@ def update():
         x = x + 1
 ```
 
-```keyboard.right``` is the Pygame Zero statement to check if the right arrow is being pressed. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. Note that the line with the word if is indented because it's inside the function, but the line x = x + 1 is indented TWICE because it's inside the function AND inside the if statement.
+```keyboard.right``` is the Pygame Zero statement to check if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. Note that the line with the word if is indented because it's inside the function, but the line x = x + 1 is indented TWICE because it's inside the function AND inside the if statement.
 
 Make this change then save the code and run it with pgzrun.
 
