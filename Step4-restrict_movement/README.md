@@ -37,3 +37,5 @@ What would the x coordinate be if the letter was outside the window to the left?
 Challenge
 =========
 Now edit all the other if statements so each of them will only change the coordinate if the letter is inside the window. All four will look similar to the one above but will have some important differences. Run your new code with pgzrun to test that the letter stops at the edge of the window in all four directions.
+
+[Go to step 5](../Step5-rectangles/README.md)
