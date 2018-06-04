@@ -6,4 +6,4 @@ will have a value True if the rectangles are overlapping or False if they are no
 
 ```bbox.colliderect(abox)``` as in both cases it simply looks at whether the boxes are overlapping.
 
-We can show this happening by making changes to the code [rect2.py](..\Step6-rectangles\rect2.py) in the previous step.
+We can show this happening by making changes to the code [rect2.py](../Step6-rectangles/rect2.py)
