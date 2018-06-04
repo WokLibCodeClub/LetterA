@@ -54,7 +54,7 @@ global x
 
 Don't forget to indent this line.
 
-The Python code letterA1.py included with this step shows the code as it might look at this stage.
+The Python code [letterA1.py](letterA1.py) included with this step shows the code as it might look at this stage.
  
 Now, when we run the code with pgzrun, we should see the letter moving. Or do we?
 
