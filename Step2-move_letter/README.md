@@ -55,7 +55,10 @@ global x
 Don't forget to indent this line.
 
 The Python code [letterA1.py](letterA1.py) included with this step shows the code as it might look at this stage.
+
 You will see that there are lots of lines in this code which begin with #. These are *comments* which are simply information to tell someone looking at the code which bits of the code do what. Python ignores these, so they don't change the way the code runs, but they are fantastically useful when you are looking for errors in your code, as they help you quickly find the bit of code which might not be working properly. Using comments in your own code is a really good thing to do. 
+
+Another very good thing to do is to put in blank lines to divide your code into different sections. It doesn't alter the way the code runs but it makes your code easier to understand.
 
 Now, when we run the code with pgzrun, we should see the letter moving. Or do we?
 
