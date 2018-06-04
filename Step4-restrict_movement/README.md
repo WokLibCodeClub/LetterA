@@ -3,7 +3,7 @@ If your code is working fine so far a good suggestion, at this stage, is to use 
 You may have noticed that if you keep pressing one of the arrow keys the letter will disappear out of the window. This step shows how to stop this happening, so that the letter is always visible.
 
 Testing if the letter is visible
-================================
+--------------------------------
 
 Our Python code can't actually look at the window and see if the letter is visible, but it can work out whether it's visible or not by checking what its x and y coordinates are.
 
