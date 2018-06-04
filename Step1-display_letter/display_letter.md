@@ -9,7 +9,7 @@ in a command window) a lot of things happen behind the scenes which you can't se
 Firstly, Pygame Zero creates a window for your code to operate in. In fact, even if you make a completely empty Python programme which has no text in it at all, then run it with pgzrun, Pygame Zero will create a window.
 
 Make a folder
-=============
+-------------
 
 It's a good to make a folder for this project so that you can keep all the different samples of code together.
 
