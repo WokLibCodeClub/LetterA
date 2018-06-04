@@ -35,7 +35,7 @@ def update():
      # Set the new values of ax and ay to be the centre of the abox Rectangle
     abox.center = (ax, ay)
 
-# Function draw clears the screen and draws the rectangle
+# Function draw clears the screen and draws the rectangles
 def draw():
     screen.clear()
     screen.draw.rect(abox, color='orange')
