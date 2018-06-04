@@ -49,7 +49,7 @@ def update():
         x = x + 1
 ```
 
-```keyboard.right``` is the Pygame Zero code to check if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. Note that the line with the word if is indented because it's inside the function, but the line x = x + 1 is indented TWICE because it's inside the function AND inside the if statement.
+```keyboard.right``` is the Pygame Zero code to check if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. Note that the line with the word **if** is indented because it's inside the update function, but the line x = x + 1 is indented *TWICE* because it's inside the function *AND* inside the if statement.
 
 Make this change then save the code and run it with pgzrun.
 
