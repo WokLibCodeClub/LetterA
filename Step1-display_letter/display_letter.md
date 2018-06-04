@@ -71,5 +71,5 @@ Challenge:
 ==========
 change your code so that the letter will appear in the centre of the window whatever size of window you choose. Remember that WIDTH and HEIGHT are Python variables, so you can use them in calculations.
 
-[Go to step 2](Step2-move_letter/move_letter.md)
+[Go to step 2](../Step2-move_letter/move_letter.md)
 
