@@ -1,4 +1,4 @@
-Hopefully we now have code which allows you to control a letter around the screen using the arrow keys but which will not go outside the window in any direction. A good suggestion is to use Save As... to save this code with a new name and do the next lot of editing in the new file.
+Hopefully you now have code which allows you to control a letter around the screen using the arrow keys but which will not go outside the window in any direction. A good suggestion is to use Save As... to save this code with a new name and do the next lot of editing in the new file.
 
 We are going to make a game in which two players can sit at the same keyboard and control *TWO* letters, with one letter chasing the other.
 
