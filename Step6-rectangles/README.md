@@ -1,4 +1,4 @@
-We've set up a game where one letter can chase the other but we haven't yet set up anything to happen when the chasing letter catches the other letter. What we need is for Python to check if one letter is overlapping the other, then we can write some code to show that the catch has happened.
+We've set up a game where one letter can chase the other but we haven't yet set up anything to happen when the chasing letter catches the other letter. What we need is for Pygame Zero to check if one letter is overlapping the other, then we can write some code to show that the catch has happened.
 
 Unfortunately Pygame Zero doesn't give us an easy way to determine when one letter is overlapping with the other. You could do it with some rather complicated maths but there is a much easier way using Rectangles.
 
