@@ -59,4 +59,6 @@ def draw():
     screen.clear()
     screen.draw.rect(abox, color='orange')
     screen.draw.rect(bbox, color='red')
+    screen.draw.text('Use arrow keys to control orange box', center=(WIDTH/2, HEIGHT-50))
+    screen.draw.text('Use keys a, w, s, d to control red box', center=(WIDTH/2, HEIGHT-25))
 
