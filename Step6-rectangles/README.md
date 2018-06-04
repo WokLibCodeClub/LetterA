@@ -5,7 +5,7 @@ Unfortunately Pygame Zero doesn't give us an easy way to determine when one lett
 Rectangle variables
 -------------------
 
-A Rectangle in Pygame Zero is a box which can be drawn in the window. To make a rectangle we create a new variable. The variables you have seen so far have been ones that contain numbers (numerical variables), ones that contain text (string variables), ones that can be either True or False (Boolean variables) but in fact in Python variables can be all sorts of other things which go  under the name of "objects". We are going to make a variabe which is a Rectangle object.
+A Rectangle in Pygame Zero is a box which can be drawn in the window. To make a rectangle we create a new variable. The variables you have seen so far have been ones that contain numbers (numerical variables), ones that contain text (string variables), ones that can be either True or False (Boolean variables) but in fact in Python variables can be all sorts of other things which go  under the name of "objects". We are going to make a variable which is a Rectangle object.
 
 To do this we have to use code like this:
 
@@ -29,11 +29,11 @@ To draw it in the window we add a statement into the draw function like this:
 
 ```screen.draw.rect(mybox, color='red')```
 
-This tells Pygame Zero to draw a box coloured red, with the height and width which we specified when we created the mybox variable, and at the x and y location which we specified last time we changed the mybox.center statement. You can put any colour here, but you have to include a colour or you will get an error.
+This tells Pygame Zero to draw a box coloured red, with the height and width which we specified when we created the mybox variable, and at the x and y location which we specified last time we changed the mybox.center statement. You can put any colour here, but you have to include a colour or you will get an error. You could also use an RGB type of colour with color=(50, 100, 150) for example.
 
-Because our code will be constantly updating the x and y coordinates of the Rectangle it really doesn't matter what values you put in for the first and second numbers when you create the new Rectangle variable. These will be updated before the rectangle gets drawn.
+Because our code will be constantly updating the x and y coordinates of the Rectangle it really doesn't matter what values you put in for the first and second numbers when you create the new Rectangle variable. These will be updated before the rectangle ever gets drawn.
 
-Look at the Python code called [rect1.py](rect1.py) which is included in this step. This code creates a rectangle object, and draws it in the centre of the window. It allows the rectangle to be moved by pressing the arrow keys but the code prevents the rectangle going outside the window. This code is really similar to the code for moving letter A.
+Look at the Python code [rect1.py](rect1.py) which is included in this step. This code creates a rectangle object, and draws it in the centre of the window. It allows the rectangle to be moved by pressing the arrow keys but the code prevents the rectangle going outside the window. This code is really similar to the code for moving letter A.
 
 Challenge
 =========
