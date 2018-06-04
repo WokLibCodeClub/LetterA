@@ -81,3 +81,5 @@ How would you make the letter move to the left? upwards? downwards? upwards and 
 Challenge
 =========
 How would you change the code to make the letter move faster?
+
+[Go to step 3](../Step3-control_movement/README.md)
