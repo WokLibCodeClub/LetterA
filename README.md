@@ -4,4 +4,4 @@ The various steps cover window size and coordinates, control of the letters usin
 
 In each step there will be challenges. You may be able to find possible solutions to these challenges by looking at code from the next step, but you'll learn much more about Python coding if you try to solve the challenges yourself first.
 
-[Go to step 1](Step1-display_letter/display_letter.md)
+[Go to step 1](Step1-display_letter/README.md)
