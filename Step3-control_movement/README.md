@@ -8,6 +8,7 @@ To change the colour you can add this to the code:
 
 ```
 def draw():
+    screen.clear()
     screen.draw.text('A', center=(x, y), color='red')
 ```
 
@@ -17,6 +18,7 @@ Here is code for a dark purple coloured letter A.
 
 ```
 def draw():
+    screen.clear()
     screen.draw.text('A', center=(x, y), color=(128, 0, 128))
 ```
 
@@ -24,6 +26,7 @@ To change the size of the letter add a fontsize parameter. Without any fontsize 
 
 ```
 def draw():
+    screen.clear()
     screen.draw.text('A', center=(x, y), color=(128, 0, 128), fontsize=60)
 ```
 
