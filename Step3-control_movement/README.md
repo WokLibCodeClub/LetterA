@@ -1,7 +1,7 @@
 Changing the appearance of the letter
 -------------------------------------
 
-Before getting on to moving the letter around the screen here are some ways you can change its appearance.
+Before getting on to controlling the movement of the letter around the screen here are some ways you can change its appearance.
 
 To change the colour you can add this to the code:
 
