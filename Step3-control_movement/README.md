@@ -35,13 +35,11 @@ Controlling the movement of the letter
 
 A very useful trick for moving things about inside a window is to have the movement controlled by the arrow keys. This section shows how to make the letter move to the right IF the right arrow is pressed but to stay still if the right arrow is not pressed.
 
-This uses a Python statement called (not surprisingly) an if statement.
+This uses a Python statement called (not surprisingly) an **if** statement.
 
 To make this work we first need some code which will tell us if the right arrow is being pressed, then we write some code to say what should happen when the right arrow is being pressed.
 
-Pygame Zero gives a way of telling if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun.
-
-An if statement starts with the word if, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the if statement must be indented.
+An if statement starts with the word **if**, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the if statement must be indented.
 
 Here is how the update function would look with an if statement:
 
@@ -51,7 +49,9 @@ def update():
         x = x + 1
 ```
 
-```keyboard.right``` is the Pygame Zero statement to check if the right arrow is being pressed. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. Note that the line with the word if is indented because it's inside the function, but the line x = x + 1 is indented TWICE because it's inside the function AND inside the if statement.
+```keyboard.right``` is the Pygame Zero code to check if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun. If it is being pressed the code goes on to the next line and increases the x coordinate by 1. But if it's not being pressed the code skips this line and leaves the x coordinate unchanged. 
+
+Note that the line with the word **if** is indented because it's inside the update function, but the line x = x + 1 is indented *TWICE* because it's inside the update function *AND* inside the if statement.
 
 Make this change then save the code and run it with pgzrun.
 
@@ -60,3 +60,9 @@ Remember that Pygame Zero is repeatedly running function update, then function d
 Challenge
 =========
 Add three more if statements inside function update, all very similar to this one, so that you can use the left arrow to move the letter to the left, the up arrow to move it upwards and the down arrow to move it downwards. Remember each of the if statements needs to be indented once, but the code inside the if statements needs to be indented twice.
+
+Challenge
+=========
+When you have all four if statements working you might want to change how fast the letter moves. But now you've got to change something in four different places. And if you then decide you changed it too much you would have to make another change in four different places. 
+
+How could you add a new variable to your code to control the speed so that when you wanted to change the speed you only needed to make a change in one place?
