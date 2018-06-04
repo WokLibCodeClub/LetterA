@@ -21,9 +21,15 @@ Make these changes and check if the letter displays properly.
 Moving the letter
 -----------------
 
-we've already said that Pygame Zero looks for a function called draw in the code, but at the same time it also looks for a function called update. If it finds one it executes update first, then draw, and keeps repeating this sequence update, draw, update, draw 60 times a second. 
+We've already said that Pygame Zero looks for a function called draw in the code, but at the same time it also looks for a function called update. If it finds one it executes update first, then draw, and keeps repeating this sequence update, draw, update, draw 60 times a second. 
 
-This means that if we make changes to the x and y coordinates in the update function, Pygame Zero will immediately afterwards draw the letter with the new coordinates. 
+This means that if we make changes to the x and y coordinates in the update function, Pygame Zero will immediately afterwards draw the letter with the new coordinates. This is how to make the letter move around the screen.
 
+Create the function update above the function draw using this code
+
+```
+def update():
+    x = x + 1
+```
 
 
