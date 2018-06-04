@@ -8,10 +8,10 @@ The easiest way to have coordinates which can be changed is to use variables for
 To make variables you need to have statements like x = 0, or y = 100 in the part of the code below the WIDTH and HEIGHT statements. These statements will both create the variables, and give them initial values. Because the values are numbers, Python understands that these new variables will be numerical variables.
 
 This code will create new variables and give them initial values which represent the centre of the window:
-
+```
 x = WIDTH/2
 y = HEIGHT/2
-
+```
 These statements need to be placed after the WIDTH and HEIGHT statements because they use the values of WIDTH and HEIGHT in the calculation. If you placed these before the WIDTH and HEIGHT statements Python would give an error because it would be trying to do a calculation using a variable called WIDTH before you'd even told Python that there was such a variable or what its value was.
 
 One suggestion is to try this - put the two statements for x and y before the statements for WIDTH and HEIGHT, run the code using pgzrun, and see what the error is. Then, in the future, if you ever see the same error you will have a good idea what the problem is, and how to fix it.
