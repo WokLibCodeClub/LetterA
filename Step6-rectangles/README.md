@@ -43,3 +43,5 @@ If you don't need the extra practice you can look at the code [rect2.py](rect2.p
 
 Have a look at the last two lines of function draw in this code: these two lines draw some text on the screen to give instructions to the players. These lines of text are deleted and redrawn every time Pygame Zero runs the update and draw functions, but since they are always drawn in exactly the same place it looks as if they are constantly on the screen.
 
+
+[Go to step 7](../Step7-collision/README.md)
