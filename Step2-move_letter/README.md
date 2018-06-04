@@ -64,7 +64,7 @@ You probably see a white line across the screen. But if you look closely you not
 
 Every time Pygame Zero runs the update function it increases the x coordinate by 1, then it runs the draw function and draws a letter A with the new coordinates. Next time around it does exactly the same thing. BUT WE HAVEN'T TOLD IT TO DELETE THE PREVIOUS LETTER A. So it keeps drawing new letter A's on top of all the old letter A's and makes what looks like a line.
 
-We need to delete the screen each time we run the update/draw functions. The way to do this is to add this code as the first line in function draw:
+We need to delete the previous letter A's before we draw a new one, and we do this by clearing the screen each time we run the update/draw functions. The way to do this is to add this code as the first line in function draw:
 
 ```
 screen.clear()
@@ -80,4 +80,4 @@ How would you make the letter move to the left? upwards? downwards? upwards and 
 
 Challenge
 =========
-How would you change the code make the letter move faster?
+How would you change the code to make the letter move faster?
