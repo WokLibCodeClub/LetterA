@@ -6,6 +6,8 @@ HEIGHT = 480
 x = WIDTH/2
 y = HEIGHT/2
 
+# Make a numerical variable to control the speed of the game
+speed = 2
 
 # Define function update where the x coordinate will be changed
 def update():
@@ -17,7 +19,7 @@ def update():
     # Change the x coordinate by 1 if both conditions are true.
     # If only one or neither is true then don't change the x coordinate.
     if keyboard.right and x < WIDTH:
-        x = x + 2
+        x = x + speed
 
 # Define function draw which will draw the letter on the screen
 def draw():
