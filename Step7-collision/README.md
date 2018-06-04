@@ -1,7 +1,9 @@
-This project uses features of the Pygame Zero addition to Python to create a simple game which consists of moving letters about in a window.
+When we are looking at two rectangles Pygame Zero has a built-in function to detect whether or not they are overlapping. If the two rectangles objects are held in variables abox and bbox then this code:
 
-The various steps cover window size and coordinates, control of the letters using if statements with keyboard input and rectangle objects.
+```abox.colliderect(bbox)```
 
-In each step there will be challenges. You may be able to find possible solutions to these challenges by looking at code from the next step, but you'll learn much more about Python coding if you try to solve the challenges yourself first.
+will have a value True if the rectangles are overlapping or False if they are not overlapping. Note that you would get exactly the same answer if you wrote this code instead:
 
-[Go to step 1](Step1-display_letter/README.md)
+```bbox.colliderect(abox)``` as in both cases it simply looks at whether the boxes are overlapping.
+
+We can show this happening by making changes to the code [rect2.py](..\Step6-rectangles\rect2.py) in the previous step.
