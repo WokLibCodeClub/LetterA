@@ -27,9 +27,7 @@ This means that if we make changes to the x and y coordinates in the update func
 
 Create the function update above the function draw using this code
 
-```
-def update():
-    x = x + 1
-```
+```def update():
+    x = x + 1```
 
 
