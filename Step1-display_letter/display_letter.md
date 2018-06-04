@@ -37,7 +37,7 @@ When Pygame Zero makes a window it also creates a coordinate system to allow you
 
 The y coordinate starts at 0 at the top edge of the window and increases DOWNWARDS. Be careful! This is the opposite way round to coordinate systems in Scratch, or in normal graphs you might draw in maths. If your window is 600 pixels high then the extreme bottom edge of the window will have a y coordinate of 599.
 
-
+![alt text](window.png "Coordinate system")
 
 Displaying something in the window
 ----------------------------------
