@@ -60,3 +60,9 @@ Remember that Pygame Zero is repeatedly running function update, then function d
 Challenge
 =========
 Add three more if statements inside function update, all very similar to this one, so that you can use the left arrow to move the letter to the left, the up arrow to move it upwards and the down arrow to move it downwards. Remember each of the if statements needs to be indented once, but the code inside the if statements needs to be indented twice.
+
+Challenge
+=========
+When you have all four if statements working you might want to change how fast the letter moves. But now you've got to change something in four different places. And if you then decide you changed it too much you would have to make another change in four different places. 
+
+How could you add a new variable to your code to control the speed so that when you wanted to change the speed you only needed to make a change in one place?
