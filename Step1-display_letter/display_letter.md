@@ -14,12 +14,12 @@ Make a folder
 It's a good to make a folder for this project so that you can keep all the different samples of code together.
 
 Create a new python file
-========================
+------------------------
 
-If you're using Python IDLE as the Python editor go to File>New File, then in the new window File>Save As... and save your empty file in your project folder. You should now open a Command Window and change the directory until you are in your project folder. In the command window you can type pgzrun <name of python programme>.py and you should see a window appear. Kill the window by clicking the red cross in the top right corner.
+If you're using Python IDLE as the Python editor go to File>New File, then in the new window File>Save As... and save your empty file in your project folder. You should now open a Command Window and change the directory until you are in your project folder. In the command window you can type pgzrun <<name of python programme>>.py and you should see a window appear. Kill the window by clicking the red cross in the top right corner.
 
 If you're using Visual Studio Code it's really helpful to use File>Open Folder to open the project folder, instead of Open File. The left edge of the screen will then show a list of all the files in that folder (there aren't any yet). Use File>New File to create a new editing window, then File>Save As..., and give the new file a name and make sure you select Python from the list in the box Save as type:
-Now go to View>Integrated Terminal and it should open a new terminal window at the bottom, which is already set to your project folder. In this window you can type pgzrun <name of python programme>.py and it should display a window. Kill the window by clicking the red cross in the top right corner.
+Now go to View>Integrated Terminal and it should open a new terminal window at the bottom, which is already set to your project folder. In this window you can type pgzrun 'name of python programme'.py and it should display a window. Kill the window by clicking the red cross in the top right corner.
 
 Controlling the window size
 ===========================
