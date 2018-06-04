@@ -26,8 +26,10 @@ We've already said that Pygame Zero looks for a function called draw in the code
 This means that if we make changes to the x and y coordinates in the update function, Pygame Zero will immediately afterwards draw the letter with the new coordinates. This is how to make the letter move around the screen.
 
 Create the function update above the function draw using this code
-
-```def update():
-    x = x + 1```
+```
+def update():
+    x = x + 1
+```
+The Python code inside the function looks like mathematical nonsense, but to Python it means take the present value of the variable x, add 1 to it and put this new value back in the variable x. If you remember that x is the x coordinate of the letter in the window what effect do you think this change of variable x would have?
 
 
