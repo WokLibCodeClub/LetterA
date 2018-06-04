@@ -39,7 +39,7 @@ This uses a Python statement called (not surprisingly) an **if** statement.
 
 To make this work we first need some code which will tell us if the right arrow is being pressed, then we write some code to say what should happen when the right arrow is being pressed.
 
-Pygame Zero gives a way of telling if the right arrow is being pressed. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun.
+Pygame Zero gives a way of telling if the right arrow is being pressed using 'keyboard.right'. Note, this is special Pygame Zero code, and won't work unless you run your code with pgzrun.
 
 An if statement starts with the word if, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the if statement must be indented.
 
