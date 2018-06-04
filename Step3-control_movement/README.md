@@ -45,6 +45,7 @@ Here is how the update function would look with an if statement:
 
 ```
 def update():
+    global x
     if keyboard.right:
         x = x + 1
 ```
@@ -56,6 +57,8 @@ Note that the line with the word **if** is indented because it's inside the upda
 Make this change then save the code and run it with pgzrun.
 
 Remember that Pygame Zero is repeatedly running function update, then function draw very quickly, so it will detect almost instantly when you start or stop pressing the right arrow.
+
+The Python code [letterA2.py](letterA2.py), included with this step, shows the code to make the right arrow move the letter to the right.
 
 Challenge
 =========
