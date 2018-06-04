@@ -71,5 +71,7 @@ Challenge:
 ==========
 change your code so that the letter will appear in the centre of the window whatever size of window you choose. Remember that WIDTH and HEIGHT are Python variables, so you can use them in calculations.
 
+If you manage to solve this you should also be able to change the coordinates to make the letter appear in the bottom right of the window, or the top left, or bottom left or wherever you want, and have this work even if you change the window size.
+
 [Go to step 2](../Step2-move_letter/README.md)
 
