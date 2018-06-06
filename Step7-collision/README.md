@@ -37,7 +37,7 @@ If you try to run your new code with pgzrun and it doesn't work pay close attent
    if something or other is true:
        do one thing
    else:
-    do something different
+       do something different
    ```
    By using the Python key word ```else``` we can give an instruction for what to do if the thing we are testing is NOT true.
 
