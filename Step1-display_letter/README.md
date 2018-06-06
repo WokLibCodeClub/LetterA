@@ -1,6 +1,4 @@
-When you run code using Pygame Zero (you do this by typing 
-
-```pgzrun <name of python programme>.py``` in a command window) a lot of things happen behind the scenes which you can't see.
+When you run code using Pygame Zero (you do this by typing ```pgzrun <name of python programme>.py``` in a command window) a lot of things happen behind the scenes which you can't see.
 
 Firstly, Pygame Zero creates a window for your code to operate in. In fact, even if you make a completely empty Python programme which has no text in it at all, then run it with pgzrun, Pygame Zero will create a window.
 
