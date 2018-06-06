@@ -2,16 +2,6 @@
 WIDTH = 640
 HEIGHT = 480
 
-# Set starting position for orange rectangle with variables ax and ay
-# This is 3/4 of the way to the right and 3/4 of the way to the bottom
-ax = WIDTH*3/4
-ay = HEIGHT*3/4
-
-# Set starting position for red rectangle with variables bx and by
-# This is 1/4 of the way to the right and 1/4 of the way to the bottom
-bx = WIDTH/4
-by = HEIGHT/4
-
 # Use variable speed to set speed for game
 speed = 4
 
@@ -27,6 +17,28 @@ collision = False
 abox = Rect(1, 1, 35, 40)
 bbox = Rect(50, 50, 35, 40)
 
+# Function startup sets the initial positions for the boxes
+def startup():
+    global ax, ay, bx, by
+    # Set starting position for orange rectangle with variables ax and ay
+    # This is 3/4 of the way to the right and 3/4 of the way to the bottom
+    ax = WIDTH*3/4
+    ay = HEIGHT*3/4
+
+    # Set starting position for red rectangle with variables bx and by
+    # This is 1/4 of the way to the right and 1/4 of the way to the bottom
+    bx = WIDTH/4
+    by = HEIGHT/4
+    
+    # Reset ax and ay to be the centre of the abox Rectangle
+    abox.center = (ax, ay)
+    # Reset bx and by to be the centre of the bbox Rectangle
+    bbox.center = (bx, by)
+
+# When we first run the programme we have to call function startup to set
+# the initial positions
+startup()
+
 # Function update takes input from keyboard and updates
 # variables ax, ay, bx, by
 def update():
@@ -38,8 +50,9 @@ def update():
     # If there is a collision stop the game and wait for key x
     if collision:
         if keyboard.x:
-            # exit() is the instruction to quit the programme
-            exit()
+            # startup() resets the letter positions
+            collision = False
+            startup()
     # If there is no collision continue using the keys to move the letters
     else:
         # The arrow keys are used for the orange rectangle
@@ -80,5 +93,5 @@ def draw():
     if collision:
             screen.draw.text('BANG!', center=(WIDTH/2, HEIGHT/2), fontsize=180, color='red')
             # Extra instruction to exit the game
-            screen.draw.text('Press x to exit', (30, HEIGHT - 30))
+            screen.draw.text('Press x to restart', (30, HEIGHT - 30))
     

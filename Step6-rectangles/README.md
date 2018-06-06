@@ -33,7 +33,7 @@ This tells Pygame Zero to draw a box coloured red, with the height and width whi
 
 Because our code will be constantly updating the x and y coordinates of the Rectangle it really doesn't matter what values you put in for the first and second numbers when you create the new Rectangle variable. These will be updated before the rectangle ever gets drawn.
 
-Look at the Python code [rect1.py](rect1.py) which is included in this step. This code creates a rectangle object, and draws it in the centre of the window. It allows the rectangle to be moved by pressing the arrow keys but the code prevents the rectangle going outside the window. This code is really similar to the code for moving letter A. The main difference is that for letter A we set the x and y coordinates in function draw. But for a rectangle Pygame Zero works slightly differently, and we have to set the x and y coordinates in function update.
+Look at the Python code [rect1.py](rect1.py) which is included in this step. This code creates a rectangle object, and draws it in the centre of the window. It allows the rectangle to be moved by pressing the arrow keys but the code prevents the rectangle going outside the window. This code is really similar to the code for moving letter A. The main difference is that for letter A we set the new x and y coordinates in function draw. But for a rectangle Pygame Zero works slightly differently, and we have to set the new x and y coordinates in function update.
 
 Challenge
 =========
