@@ -15,7 +15,7 @@ But there are also
   -```screen.draw.line``` which draws a line when you give it coordinates for the beginning and end  
   -```screen.draw.circle``` which draws a circle when you give it the position and size  
   -```screen.draw.filled_circle``` which draws a circle and fills it with colour  
-  -```screen.draw.blit``` which draws an image on the screen  
+  -```screen.draw.blit``` which draws an image from an image file on the screen  
 
 You can find a complete list with all the necessary instructions on how to use them at:
 
@@ -30,9 +30,9 @@ The way to use this is to put code like this in function draw:
 screen.draw.textbox('A', abox, color='red')
 ```
 
-This uses a rectangle which we would need to have already defined with variable abox, but instead of drawing the box it puts the letter A inside the box and draws that.
+This uses a rectangle which has already defined with variable abox, but instead of drawing the box it puts the letter A inside the box and draws that.
 
-One important thing about ```screen.draw.textbox``` is that it automatically scales the text to fit in the rectangle. So you can't use fontsize= with a textbox, as the text size is controlled by the size of the rectangle. It means if your text is long, you should make your rectangle wider than it is high to fit the text you want to display in it.
+One important thing about ```screen.draw.textbox``` is that it automatically scales the text to fit in the rectangle. So you can't use fontsize= with a textbox, as the text size is controlled by the size of the rectangle. It also means if your text is long, you should make your rectangle wider than it is high to fit the text you want to display in it.
 
 There doesn't seem to be a way to display a textbox *AND* have the box drawn as well. So one way you could do this is by having two draw statements:
 ```
@@ -40,4 +40,7 @@ screen.draw.textbox('A', abox, color='red')
 screen.draw.rect(abox, color='red')
 ```
 
+Changing your text code to textboxes
+------------------------------------
 
+You can now make some small adjustments to your code from step 
