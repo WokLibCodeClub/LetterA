@@ -29,7 +29,7 @@ def startup():
     # This is 1/4 of the way to the right and 1/4 of the way to the bottom
     bx = WIDTH/4
     by = HEIGHT/4
-    
+
     # Reset ax and ay to be the centre of the abox Rectangle
     abox.center = (ax, ay)
     # Reset bx and by to be the centre of the bbox Rectangle
@@ -50,7 +50,7 @@ def update():
     # If there is a collision stop the game and wait for key x
     if collision:
         if keyboard.x:
-            # startup() resets the letter positions
+            # startup() resets the letter positions and cancels the collision
             collision = False
             startup()
     # If there is no collision continue using the keys to move the letters

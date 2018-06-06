@@ -5,6 +5,9 @@ At the moment all that happens when the two letters overlap is that you have som
 
 This is where you can be creative and design your own ending to the game. See if you can come up with some ideas.
 
+Display the word BANG?
+----------------------
+
 To give you one suggestion: maybe when the letters collide the game could stop and the word BANG! could appear across the screen in big red letters. This is what happens in the code [chase1.py](chase1.py) included with this step, so it's worth taking a moment to explain different parts of this code. 
 
 This code is very similar to the code in [textbox1.py](textbox1.py). The most important difference is in function update. When we had code that displayed text in the window to show whether there was a collision or not we wanted to be able to keep moving the letters using the keys, even if there was a collision. But now, when there is a collision, we want the letters to stop moving. 
@@ -25,13 +28,33 @@ if collision:
 ```
 there is another if statement. This is checking whether keyboard key x is pressed. If it is pressed then the code goes on to the next line which is ```exit()``` which is the command to quit the programme.
 
-Remember that when we run this code with Pygame Zero it is constantly running function update, then function draw, so if the letters are colliding every time it runs function update it will go into the first part of this if statement and check if key x is pressed, but it won't do anything if key x is not pressed.
+Remember that when we run this code with Pygame Zero it is constantly running function update, then function draw, so if the letters are colliding, every time it runs function update it will go into the first part of this if statement and check if key x is pressed. If key x is pressed the programme will exit, but if key x is not pressed it won't do anything.
 
-The other important change is in function draw where there is now an if statement at the end of this. When Pygame Zero runs function update it checks if the letters are colliding, and if they are it sets the Boolean variable called collision to be True. Pygame Zero then goes on to function draw, where it clears the screen, draws the letters where they were before the collision, then if collision is True it writes the text 'BANG!' in large red letters. But if collision is False it ignores this line.
+The other important change is in function draw where there is now an if statement at the end of this. When Pygame Zero runs function update it checks if the letters are colliding, and if they are it sets the Boolean variable called collision to be True. Pygame Zero then goes on to function draw, where it clears the screen, draws the letters at the most recent positions, then if collision is True it writes the text 'BANG!' in large red letters, and also puts smaller text saying 'Press x to exit' in the bottom left corner. But if collision is False it ignores these lines.
 
-Other possibilities
+To understand this code properly it is an idea to go through it in the same order that Python will go through it, remembering what value each variable will have at each step.
+
+You could now rewrite your own code to do something like this.
+
+Restarting the game instead of quitting
+---------------------------------------
+
+A slightly more complicated version of this would be instead pressing x to quit the programme when one letter catches the other you could press x to have the game go back to the starting positions so you can play again. This is what happens in the code [chase2.py](chase2.py) with this step, so here is some explanation of how this code works. 
+
+In this code we have defined a new function which is called startup. We have moved some code into this function from the main part of the programme. The code which has been moved is the code which sets the starting positions of all the coordinate variables of the two letters, and the starting positions of the two rectangles.
+
+We want to run this function firstly at the beginning of the game, and again every time there is a collision and key x is pressed. As this is not function draw or function update it will not be run automatically by Pygame Zero, so we need to add code to run this function ourselves. The line of code which runs this function is ```startup()``` which you will find just above function update. The technical term is to "call" the function.
+
+The positioning of this line of code makes a very important point about how you arrange your Python code: *YOU MUST DEFINE A FUNCTION IN THE CODE BEFORE YOU CALL IT*. Otherwise Python will give an error.
+
+Another change is in function update: in the statement where we check if key x has been pressed we don't want to exit the programme, we want to do something different - we want to set the programme back to its starting situation. The first thing we must do is cancel the collision, by setting collision to False, because otherwise, when Pygame Zero runs function draw it will still think there is a collision and it will draw the word BANG!. The next thing is to call our new function startup() to set the textboxes back to their starting positions. Now the game is ready to play again.
+
+The last change to make is in function draw: where we drew the text 'Press x to exit' we now want to draw the text 'Press x to restart'.
+
+The final challenge
 -------------------
 
-Here are some other things you could put into your code:
+The next part is up to you. Using the different parts of Pygame Zero in this project you will be able to adapt your code to do many different things, and you can look at the full instructions for Pygame Zero, with all the different possibilities, on the webpage:
 
-* Instead of the game quitting when one letter catches the other you could have the game go back to the starting positions so you can play again. This is what happens in the code [chase2.py](chase2.py) with this step. One way to do this is to make a new function which sets the initial posision
+[http://pygame-zero.readthedocs.io/en/stable/index.html](http://pygame-zero.readthedocs.io/en/stable/index.html)
+
