@@ -48,7 +48,7 @@ def draw():
 ```
 it will draw the word cabbage on the screen instead of letter A.
 
-One advantage of using a text variable instead of text in quotes here is that with a variable you can get the text which is drawn to change as the code runs. You could, for example, write your code so that instead of a word it would draw the x coordinate as the text moved around.
+One advantage of using a text variable instead of text in quotes here is that with a variable you can get the text which is drawn to change as the code runs. You could, for example, write your code so that instead of a word it would draw the value of the x coordinate as the text moved around.
 
 Controlling the movement of the letter
 --------------------------------------
