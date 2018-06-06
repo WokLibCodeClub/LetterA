@@ -5,7 +5,7 @@ To make the letter move around the screen we need to change its coordinates. The
 
 The easiest way to have coordinates which can be changed is to use variables for the x and y coordinates. You can give these any name, but here we will call them x and y. 
 
-To make variables you need to have statements like x = 0, or y = 100 in the part of the code below the WIDTH and HEIGHT statements. These statements will both create the variables, and give them initial values. Because the values are numbers, Python understands that these new variables will be numerical variables.
+To make variables you need to have statements like x = 0, or y = 100 in the part of the code below the WIDTH and HEIGHT statements. These statements will both create the variables x and y, and give them initial values. Because the values we are giving the new variables are numbers, Python understands that these new variables will be numerical variables.
 
 This code will create new variables and give them initial values which represent the centre of the window:
 ```
@@ -16,7 +16,7 @@ These statements need to be placed after the WIDTH and HEIGHT statements because
 
 One suggestion is to try this - put the two statements for x and y before the statements for WIDTH and HEIGHT, run the code using pgzrun, and see what the error is. Then, in the future, if you ever see the same error you will have a good idea what the problem is, and how to fix it.
 
-In the draw function we need to change the coordinates in center= so that for the x coordinate it will use the variable x, and for the y coordinate it will use the variable y.
+After creating the new variables x and y we need to change the the draw function so that the coordinates in brackets after center= will use the variable x for the x coordinate , and the variable y for the y coordinate.
 
 Make these changes and check if the letter displays properly.
 
