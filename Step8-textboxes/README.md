@@ -11,7 +11,7 @@ We've already seen
 
 But there are also
 
-  -```screen.draw.filled_rectangle``` which draws a box and fills it with colour  
+  ```screen.draw.filled_rectangle``` which draws a box and fills it with colour  
   -```screen.draw.line``` which draws a line when you give it coordinates for the beginning and end  
   -```screen.draw.circle``` which draws a circle when you give it the position and size  
   -```screen.draw.filled_circle``` which draws a circle and fills it with colour  
