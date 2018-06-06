@@ -1,8 +1,13 @@
 Hopefully you now have code which allows you to control a letter around the screen using the arrow keys but which will not go outside the window in any direction. A good suggestion is to use Save As... to save this code with a new name and do the next lot of editing in the new file.
 
+Challenge
+=========
+
 We are going to make a game in which two players can sit at the same keyboard and control *TWO* letters, with one letter chasing the other.
 
 To do this you need to expand your code to create a second letter, this time controlled by keys at the left-hand edge of the keyboard (you can choose which keys you like for this). This will make your code almost twice as long.
+
+You can do a lot of this extra coding using copy and paste, and then making changes to the pasted code.
 
 Here are some things to bear in mind:
 
