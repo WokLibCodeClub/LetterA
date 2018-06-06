@@ -51,6 +51,10 @@ Another change is in function update: in the statement where we check if key x h
 
 The last change to make is in function draw: where we drew the text 'Press x to exit' we now want to draw the text 'Press x to restart'.
 
+Challenge
+=========
+Perhaps you could combine this with chase1.py to give the players a choice when one letter catches the other - press one key to restart the game, and a different key to exit. How would you do that?
+
 The final challenge
 -------------------
 
