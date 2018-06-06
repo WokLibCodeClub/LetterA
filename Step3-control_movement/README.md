@@ -88,6 +88,6 @@ Challenge
 =========
 When you have all four if statements working you might want to change how fast the letter moves. But now you've got to change something in four different places. And if you then decide you changed it too much you would have to make another change in four different places. 
 
-How could you add a new variable to your code to control the speed so that when you wanted to change the speed you only needed to make a change in one place?
+How could you edit your code to control the speed so that when you wanted to change the speed you only needed to make a change in one place?
 
 [Go to step 4](../Step4-restrict_movement)
