@@ -39,7 +39,7 @@ There doesn't seem to be a way to display a textbox *AND* have the box drawn as 
 screen.draw.textbox('A', abox, color='red')
 screen.draw.rect(abox, color='red')
 ```
-The first statement draws the letter A in a red colour inside the rectangle called abox, and the second statement draws the outline of the rectangle abox, also in red. Since we haven't changed the coordinates of abox both the letter A and the red outline will be drawn in exactly the same place.
+The first statement draws the letter A in a red colour inside the rectangle called abox, and the second statement draws the outline of the rectangle abox, also in red. Since we haven't changed the coordinates of abox both the letter A and the red outline will be drawn at exactly the same location.
 
 Changing your rectangles to textboxes
 ------------------------------------
