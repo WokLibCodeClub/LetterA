@@ -86,4 +86,4 @@ Challenge
 =========
 How would you change the code to make the letter move faster?
 
-[Go to step 3](../Step3-control_movement/README.md)
+[Go to step 3](../Step3-control_movement)

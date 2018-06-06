@@ -70,4 +70,4 @@ When you have all four if statements working you might want to change how fast t
 
 How could you add a new variable to your code to control the speed so that when you wanted to change the speed you only needed to make a change in one place?
 
-[Go to step 4](../Step4-restrict_movement/README.md)
+[Go to step 4](../Step4-restrict_movement)
