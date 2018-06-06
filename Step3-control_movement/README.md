@@ -30,6 +30,26 @@ def draw():
     screen.draw.text('A', center=(x, y), color=(128, 0, 128), fontsize=60)
 ```
 
+Changing the text that is drawn
+-------------------------------
+
+You don't need to use a letter A for this code. You can put any text inside the quotes and it will be drawn on the screen. But you can also use a text variable here.
+
+If you make a text variable (do this in the top part of the programme where the other variables are being created), for example with:
+```
+c = 'cabbage'
+```
+then change the draw function to:
+
+```
+def draw():
+    screen.clear()
+    screen.draw.text(c, center=(x, y), color=(128, 0, 128), fontsize=60)
+```
+it will draw the word cabbage on the screen instead of letter A.
+
+One advantage of using a text variable instead of text in quotes here is that with a variable you can get the text which is drawn to change as the code runs. You could, for example, write your code so that instead of a word it would draw the x coordinate as the text moved around.
+
 Controlling the movement of the letter
 --------------------------------------
 
