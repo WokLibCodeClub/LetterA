@@ -40,11 +40,13 @@ Scope of variables
 
 Unfortunately if we run the code using pgzrun like this it will give an error. This is because of something called the scope of variables.
 
-In Python you can create variables either inside a function, or outside all functions. Variables created outside of all functions are called global variables. In this programme WIDTH, HEIGHT, x and y are examples of global variables because the statements that create them are not inside any function.
+In Python you can create variables either inside a function, or outside all functions. Variables created outside of all functions are called global variables. In this programme WIDTH, HEIGHT, x and y are examples of global variables because the statements that create them (these statements are called variable **declarations**) are not inside any function.
 
 Variables can also be created inside a function and these are called local variables. A local variable can only be used inside the function where it was created. In technical terms we say the variable has a local "scope". In fact, even if a local variable has exactly the same name as a global variable Python will treat them completely separately as two different variables. 
 
-When Python finds a variable inside a function it assumes it is a local variable attached to the function. In our code Python finds a reference to a variable x inside the function update, so it assumes this is a local variable. But we haven't created a local variable x inside the function, so Python is confused and gives an error.
+When Python comes across a variable name inside a function it behaves differently depending on what you want to do with the variable. If you only want to *read* the value of the variable Python will look for a local variable with that name inside the function, but if it doesn't find one it will look for a global variable with that name and read the value. 
+
+But if you want to *change* the value of a variable inside a function Python assumes it is a local variable attached to the function. In our code Python finds an instruction to change variable x inside function update, so it assumes this is a local variable. But we haven't created a local variable x inside the function, so Python is confused and gives an error.
 
 What we need is a way of telling Python that variable x inside the function update is NOT a local variable, but the same global variable which we created outside of any function. The way to do this is to add this code as the first line of the function:
 
