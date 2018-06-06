@@ -13,7 +13,7 @@ A good way to demonstrate this is to change the code [rect2.py](../Step6-rectang
 
 Below are some instructions which show one way to achieve this.
 
-Suggestion: Use Save As... to save the code rect2.py with a new name and make your edits in the file with the new name.
+Suggestion: Use Save As    to save the code rect2.py with a new name and make your edits in the file with the new name.
 
 Challenge
 =========
@@ -32,20 +32,20 @@ If you try to run your new code with pgzrun and it doesn't work pay close attent
 
 5. We are now going to put a new if statement in function update. This will be slightly more complicated than the if statements we've used so far, as we want to give it two possible outcomes.
 
-...The if statement will look something like this (pay special attention to how the indents work):
-...```
-...if something or other is true:
-...    do one thing
-...else:
+   The if statement will look something like this (pay special attention to how the indents work):
+   ```
+   if something or other is true:
+       do one thing
+   else:
     do something different
-...```
-...By using the Python key word ```else``` we can give an instruction for what to do if the thing we are testing is NOT true.
+   ```
+   By using the Python key word ```else``` we can give an instruction for what to do if the thing we are testing is NOT true.
 
-...The "something or other" that we want to test is the new Boolean variable, and when we are testing a Boolean variable the if line is quite simple and consists of just the word 'if', and a space, and the name of the Boolean variable, then a colon.
+   The "something or other" that we want to test is the new Boolean variable, and when we are testing a Boolean variable the if line is quite simple and consists of just the word 'if', and a space, and the name of the Boolean variable, then a colon.
 
-...If the Boolean variable is true, it means the rectangles are overlapping. And the 'do one thing' line will set the new text variable to contain some text which explains that the rectangles are colliding.
+   If the Boolean variable is true, it means the rectangles are overlapping. And the 'do one thing' line will set the new text variable to contain some text which explains that the rectangles are colliding.
 
-...If the Boolean variable is not true, it means the rectangles are not overlapping. And the 'do something different' line will set the new text variable to contain some text which explains that the rectangles are not colliding.
+   If the Boolean variable is not true, it means the rectangles are not overlapping. And the 'do something different' line will set the new text variable to contain some text which explains that the rectangles are not colliding.
 
 
 
