@@ -11,9 +11,7 @@ speed = 2
 
 # Define function update where the x coordinate will be changed
 def update():
-    # You don't need a separate line for each global variable -
-    # it is possible to put them all on one line, separated by commas.
-    global x, WIDTH
+    global x
     # Use if statement to check if the right arrow is being pressed and
     # if the x coordinate is less than the right edge of the window.
     # Change the x coordinate by 1 if both conditions are true.

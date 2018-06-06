@@ -27,7 +27,7 @@ bbox = Rect(50, 50, 30, 40)
 # Function update takes input from keyboard and updates
 # variables ax, ay, bx, by
 def update():
-    global ax, ay, bx, by, WIDTH, HEIGHT
+    global ax, ay, bx, by
     
     # The arrow keys are used for the orange rectangle
     if keyboard.right and ax < WIDTH:

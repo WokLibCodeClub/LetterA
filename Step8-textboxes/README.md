@@ -30,7 +30,7 @@ The way to use this is to put code like this in function draw:
 screen.draw.textbox('A', abox, color='red')
 ```
 
-This uses a rectangle which has already defined with variable abox, but instead of drawing the box it puts the letter A inside the box and draws that.
+This uses a rectangle which has already defined - in this example it is a variable called abox - but instead of drawing the box it puts the letter A inside the box and draws that.
 
 One important thing about ```screen.draw.textbox``` is that it automatically scales the text to fit in the rectangle. So **you can't use fontsize= with a textbox**, as the text size is controlled by the size of the rectangle. It also means if your text is long, you should make your rectangle wider than it is high to fit the text you want to display in it.
 
@@ -40,7 +40,16 @@ screen.draw.textbox('A', abox, color='red')
 screen.draw.rect(abox, color='red')
 ```
 
-Changing your text code to textboxes
+Changing your rectangles to textboxes
 ------------------------------------
 
-You can now make some small adjustments to your code from step 
+You can now make some small adjustments to your code from step 7 to change your rectangles into text boxes. All you have to do is change the ```screen.draw.rect``` commands to ```screen.draw.textbox``` and add the text which you want display in each box as the first parameter inside the brackets.
+
+If you want to make the displayed text bigger or smaller you can do this by changing the size of the rectangles, which you do in the line of code where you created (or *declared*) the rectangle variables.
+
+You should now have code which will have two letters moving about in the game window, controlled by different keys, and a way of testing when the letters are overlapping, which would happen when one letter catches the other.
+
+But what would you like to happen when one letter catches the other?
+
+
+[Go to step 9](../Step9-final_challenge)

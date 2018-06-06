@@ -33,7 +33,7 @@ bbox = Rect(50, 50, 30, 40)
 # Function update takes input from keyboard and updates
 # variables ax, ay, bx, by
 def update():
-    global ax, ay, bx, by, WIDTH, HEIGHT, collision, coll_text
+    global ax, ay, bx, by, collision, coll_text
     
     # Test if the two boxes are overlapping and put result in collision
     collision = abox.colliderect(bbox)

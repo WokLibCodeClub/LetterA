@@ -20,7 +20,9 @@ abox = Rect(1, 1, 40, 30)
 # Function update takes input from keyboard and updates
 # variables ax, ay
 def update():
-    global ax, ay, WIDTH, HEIGHT
+    # Note that you don't need a different line for each global variable.
+    # You can put them all on one line, separated by commas
+    global ax, ay
     
     # The arrow keys are used for the orange rectangle
     if keyboard.right and ax < WIDTH:

@@ -26,8 +26,6 @@ If you set up the code like this, then decided to change the size of your window
 if keyboard.right and x < WIDTH:
     x = x + 1
 ```
-Remember, as WIDTH is a global variable you will need to include an extra line in the update function to prevent an error. (Can you remember what that would be?)
-
 The Python code [letterA3.py](letterA3.py), included with this step, shows how the code might look at this stage.
 
 Challenge
