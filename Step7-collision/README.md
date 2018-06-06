@@ -47,8 +47,5 @@ If you try to run your new code with pgzrun and it doesn't work pay close attent
 
    If the Boolean variable is not true, it means the rectangles are not overlapping. And the 'do something different' line will set the new text variable to contain some text which explains that the rectangles are not colliding.
 
-
-
-Underneath the collision statement make an if statement. This statement has to set the variable coll_text to contain 'collision = True' if variable collision is True, or 'collision = False' if collision is false.
-6. In function draw replace the last two lines with one line which will display the variable coll_text.
+6. The last step is to display our new text variable, which we do in function draw. At the end of code rect2.py there are two lines which display text near the bottom of the window. You can delete one of these, but change the other one so that instead of displaying some text in quotes it will display your new text variable, without any quotes. You can adjust the exact position in the window where the centre of the text is located by changing the code in the brackets after center=.
 
