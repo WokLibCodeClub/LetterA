@@ -11,11 +11,11 @@ We've already seen
 
 But there are also
 
-  *```screen.draw.filled_rectangle``` which draws a box and fills it with colour  
-  *```screen.draw.line``` which draws a line when you give it coordinates for the beginning and end  
-  *```screen.draw.circle``` which draws a circle when you give it the position and size  
-  *```screen.draw.filled_circle``` which draws a circle and fills it with colour  
-  *```screen.draw.blit``` which draws an image on the screen  
+  -```screen.draw.filled_rectangle``` which draws a box and fills it with colour  
+  -```screen.draw.line``` which draws a line when you give it coordinates for the beginning and end  
+  -```screen.draw.circle``` which draws a circle when you give it the position and size  
+  -```screen.draw.filled_circle``` which draws a circle and fills it with colour  
+  -```screen.draw.blit``` which draws an image on the screen  
 
 You can find a complete list with all the necessary instructions on how to use them at:
 
@@ -36,8 +36,8 @@ One important thing about ```screen.draw.textbox``` is that it automatically sca
 
 There doesn't seem to be a way to display a textbox *AND* have the box drawn as well. So one way you could do this is by having two draw statements:
 ```
-screen.draw.rect(abox, color='red')
 screen.draw.textbox('A', abox, color='red')
+screen.draw.rect(abox, color='red')
 ```
 
 
