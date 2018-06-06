@@ -5,7 +5,7 @@ Unfortunately Pygame Zero doesn't give us an easy way to determine when one lett
 Rectangle variables
 -------------------
 
-A Rectangle in Pygame Zero is a box which can be drawn in the window. To make a rectangle we create a new variable. The variables you have seen so far have been ones that contain numbers (numerical variables), ones that contain text (string variables), ones that can be either True or False (Boolean variables) but in fact in Python variables can be all sorts of other things which go  under the name of "objects". We are going to make a variable which is a Rectangle object.
+A Rectangle in Pygame Zero is a box which can be drawn in the window. To make a rectangle we create a new variable. The variables you have seen so far have been ones that contain numbers (numerical variables), ones that contain text (text or string variables), ones that can be either True or False (Boolean variables) but in fact in Python variables can be all sorts of other things which go  under the name of "objects". We are going to make a variable which is a Rectangle object.
 
 To do this we have to use code like this:
 
@@ -17,9 +17,9 @@ So if my code was
 
 ```mybox = Rect(10, 20, 40, 30)```
 
-this would make a rectangle object with the left edge at x coordinate 10, the top edge at y coordinate 20, and 40 pixels wide and 30 pixels high. Note that we've only *created* a rectangle object - we haven't done anything about *drawing* it in the window yet.
+this would make a rectangle object called mybox with the left edge at x coordinate 10, the top edge at y coordinate 20, and 40 pixels wide and 30 pixels high. Note that we've only *created* a rectangle object - we haven't done anything about *drawing* it in the window yet.
 
-To make the rectangle move we have to change the x and y coordinates. We can do this with a statement like this:
+To make the rectangle move we have to be able to change the x and y coordinates. We can do this with a statement like this:
 
 ```mybox.center=(100, 150)```
 
@@ -29,7 +29,7 @@ To draw it in the window we add a statement into the draw function like this:
 
 ```screen.draw.rect(mybox, color='red')```
 
-This tells Pygame Zero to draw a box coloured red, with the height and width which we specified when we created the mybox variable, and at the x and y location which we specified last time we changed the coordinates. You can put any colour here, but you have to include a colour or you will get an error. You could also use an RGB type of colour with color=(50, 100, 150) for example.
+This tells Pygame Zero to draw a box coloured red, with the height and width which we set when we created the mybox variable, and at the x and y location which we specified last time we changed the coordinates. You can put any colour here, but you have to include a colour or you will get an error. You could also use an RGB type of colour with color=(50, 100, 150) for example.
 
 Because our code will be constantly updating the x and y coordinates of the Rectangle it really doesn't matter what values you put in for the first and second numbers when you create the new Rectangle variable. These will be updated before the rectangle ever gets drawn.
 
@@ -41,7 +41,7 @@ If you would like some practice in coding: edit the Python code rect1.py to add 
 
 If you don't need the extra practice you can look at the code [rect2.py](rect2.py) which is included in this step. This code creates two rectangles and allows them to be moved with different keys. 
 
-Have a look at the last two lines of function draw in this code: these two lines draw some text on the screen to give instructions to the players. These lines of text are deleted and redrawn every time Pygame Zero runs the update and draw functions, but since they are always drawn in exactly the same place it looks as if they are constantly on the screen.
+Have a look at the last two lines of function draw in this code: these two lines draw some text on the screen to give instructions to the players. These lines of text are deleted and redrawn every time Pygame Zero runs the draw function, but since they are always drawn in exactly the same place it looks as if they are constantly on the screen.
 
 
 [Go to step 7](../Step7-collision)
