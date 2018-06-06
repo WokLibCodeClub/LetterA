@@ -49,3 +49,9 @@ If you try to run your new code with pgzrun and it doesn't work pay close attent
 
 6. The last step is to display our new text variable, which we do in function draw. At the end of code rect2.py there are two lines which display text near the bottom of the window. You can delete one of these, but change the other one so that instead of displaying some text in quotes it will display your new text variable, without any quotes. You can adjust the exact position in the window where the centre of the text is located by changing the code in the brackets after center=.
 
+
+Test your new code with pgzrun. If everything is working you should find, as you move the two rectangles around the screen, that the text you're displaying changes depending on whether the rectangles are overlapping or not. Congratulations!
+
+If your new code doesn't work - don't despair. New code almost always doesn't work the first time. You need to work your way through the code in exactly the way Python does, line by line, and keep track of what each variable contains at each stage in the programme, and this will normally lead to the moment where you suddenly realise what's going wrong. This is called debugging and it's something every coder gets very used to doing.
+
+[Go to step 8](../Step8-textboxes)
