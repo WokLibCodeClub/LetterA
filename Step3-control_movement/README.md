@@ -12,7 +12,7 @@ def draw():
     screen.draw.text('A', center=(x, y), color='red')
 ```
 
-Again, we have to use the American spelling "color" not the British "colour". Most of the common colours can be produced just by putting the name of the colour inside quotes. But you can make your own colour by combining different amounts of the primary colours red, green and blue. To do this replace 'red' with a set of brackets, with three numbers up to 255, separated by commas, where the three numbers are the strengths of red, green and blue. So (0, 0, 255) would produce a blue colour, but (255, 255, 0) would produce yellow. (128, 0, 0) would produce a dark red colour, and (60, 0, 0) would produce a very dark red colour.
+Again, we have to use the American spelling "color" not the British "colour". Most of the common colours can be produced just by putting the name of the colour inside quotes. But you can make your own colour by combining different amounts of the primary colours red, green and blue. To do this replace 'red' with a set of brackets, with three numbers up to 255, separated by commas, where the three numbers are the strengths of red, green and blue. So (0, 0, 255) would produce a blue colour (zero red, zero green, maximum blue), but (255, 255, 0) would produce yellow (maximum red, maximum green, zero blue). (128, 0, 0) would produce a dark red colour (half strength red and no green or blue), and (60, 0, 0) would produce a very dark red colour.
 
 Here is code for a dark purple coloured letter A.
 
