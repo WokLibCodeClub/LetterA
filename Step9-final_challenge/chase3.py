@@ -98,7 +98,7 @@ def draw():
     screen.draw.textbox('B', bbox, color='red')
     screen.draw.rect(bbox, color='red')
 
-    # Display the game time
+    # Display the game time in the top left
     screen.draw.text('Game time = ' + str(round(gameTime,1)) + ' secs', (30,30))
     
     # If there is a collision then draw 'BANG' in the middle of the window
