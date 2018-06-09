@@ -47,7 +47,7 @@ We want to run this function firstly at the beginning of the game, and again eve
 
 The positioning of this line of code makes a very important point about how you arrange your Python code: *YOU MUST DEFINE A FUNCTION IN THE CODE BEFORE YOU CALL IT*. Otherwise Python will give an error.
 
-Another change is in function update: in the statement where we check if key x has been pressed we don't want to exit the programme, we want to do something different - we want to set the programme back to its starting situation. The first thing we must do is cancel the collision, by setting collision to False, because otherwise, when Pygame Zero runs function draw it will still think there is a collision and it will draw the word BANG!. The next thing is to call our new function startup() to set the textboxes back to their starting positions. Now the game is ready to play again.
+Another change is in function update: in the statement where we check if key x has been pressed we don't want to exit the programme, we want to do something different - we want to set the programme back to its starting situation. The first thing we must do is to call our new function startup() to set the textboxes back to their starting positions. Now the game is ready to play again.
 
 The last change to make is in function draw: where we drew the text 'Press x to exit' we now want to draw the text 'Press x to restart'.
 

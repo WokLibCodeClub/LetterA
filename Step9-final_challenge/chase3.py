@@ -56,8 +56,7 @@ def update():
     # If there is a collision stop the game and wait for key x
     if collision:
         if keyboard.x:
-            # startup() resets the letter positions and cancels the collision
-            collision = False
+            # startup() resets the letter positions
             startup()
     # If there is no collision continue using the keys to move the letters
     else:
