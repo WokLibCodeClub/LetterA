@@ -22,7 +22,7 @@ These instructions don't give every detail about how to make the changes. The ch
 
 If you try to run your new code with pgzrun and it doesn't work pay close attention to the error messages in the terminal window. The last line of the messages usually points to the exact line in your code where Python found a problem. This will help you find where you might need to make changes.
 
-Download and have a look at the powerpoint file [pygame_zero_hints.pptx](pygame_zero_hints.pptx) included with this step, which has some suggestions which may be helpful.
+Download and have a look at the powerpoint file [pygame_zero_hints.pptx](pygame_zero_hints.pptx) included with this step, which has some suggestions which may be helpful. (To do this, click on the link here, then click on the button Download.)
 
 1. If we want to keep track of whether the rectangles are overlapping or not a good way is to make a global variable which would be either True if they are overlapping or False if they are not. So start by making a new global variable and set it equal to False. (By doing this we immediately signal to Python that the new variable is a Boolean type variable which can be either True or False but can't have any other value.) You can choose what to call the variable. It would make sense to put the declaration for this variable with the declarations for our other global variables.
 
