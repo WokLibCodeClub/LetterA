@@ -55,6 +55,11 @@ Challenge
 =========
 Perhaps you could combine this with chase1.py to give the players a choice when one letter catches the other - press one key to restart the game, and a different key to exit. How would you do that?
 
+Adding a game timer
+-------------------
+
+The code in [chase3.py](chase3.py) is based on chase2.py but has added a game timer, to time how long the letter being chased can avoid being caught. Look at the code to see how it works. One possible addition to this code would be to add a variable for the best (longest) time so far and display this.
+
 The final challenge
 -------------------
 
