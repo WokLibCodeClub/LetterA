@@ -22,6 +22,8 @@ These instructions don't give every detail about how to make the changes. The ch
 
 If you try to run your new code with pgzrun and it doesn't work pay close attention to the error messages in the terminal window. The last line of the messages usually points to the exact line in your code where Python found a problem. This will help you find where you might need to make changes.
 
+Download and have a look at the powerpoint file [pygame zero hints.pptx](pygame zero hints.pptx) included with this step, which has some suggestions which may be helpful.
+
 1. If we want to keep track of whether the rectangles are overlapping or not a good way is to make a global variable which would be either True if they are overlapping or False if they are not. So start by making a new global variable and set it equal to False. (By doing this we immediately signal to Python that the new variable is a Boolean type variable which can be either True or False but can't have any other value.) You can choose what to call the variable. It would make sense to put the declaration for this variable with the declarations for our other global variables.
 
 2. We are going to display some text in the game window to show if the rectangles are overlapping or not, and we want this text to be different depending on whether they are or aren't overlapping. A good way to do this is to put the text in a text variable. So you will need to make another new global variable, which will be a text variable. You tell Python that your new variable is a text variable by setting it equal to something in quotes. It doesn't matter what initial value you give it, as long as it's in quotes, as you will be changing the value later in the programme.
