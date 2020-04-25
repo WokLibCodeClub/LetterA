@@ -1,7 +1,7 @@
 Using variables for coordinates
 -------------------------------
 
-To make the letter move around the screen we need to change its coordinates. These are the values in part of the screen.draw.text statement in the brackets next to center=
+To make the letter move around the screen we need to change its coordinates. These are the values in part of the screen.draw.text statement in the brackets next to ```center=```
 
 The easiest way to have coordinates which can be changed is to use variables for the x and y coordinates. You can give these any name, but here we will call them x and y. 
 
@@ -16,14 +16,14 @@ These statements need to be placed after the WIDTH and HEIGHT statements because
 
 One suggestion is to try this - put the two statements for x and y before the statements for WIDTH and HEIGHT, run the code using pgzrun, and see what the error is. Then, in the future, if you ever see the same error you will have a good idea what the problem is, and how to fix it.
 
-After creating the new variables x and y we need to change the the draw function so that the coordinates in brackets after center= will use the variable x for the x coordinate , and the variable y for the y coordinate.
+After creating the new variables x and y we need to change the the draw function so that the coordinates in brackets after ```center=``` will use the variable x for the x coordinate , and the variable y for the y coordinate.
 
 Make these changes and check if the letter displays properly.
 
 Moving the letter
 -----------------
 
-We've already said that Pygame Zero looks for a function called draw in the code, but at the same time it also looks for a function called update. If it finds one it executes update first, then draw, and keeps repeating this sequence update, draw, update, draw 60 times a second. 
+We've already said that Pygame Zero looks for a function called ```draw()``` in the code, but at the same time it also looks for a function called ```update()```. If it finds one it executes ```update()``` first, then draw, and keeps repeating this sequence update, draw, update, draw 60 times a second. 
 
 This means that if we make changes to the x and y coordinates in the update function, Pygame Zero will immediately afterwards draw the letter with the new coordinates. This is how to make the letter move around the screen.
 
@@ -40,9 +40,9 @@ Scope of variables
 
 Unfortunately if we run the code using pgzrun like this it will give an error. This is because of something called the scope of variables.
 
-In Python you can create variables either inside a function, or outside all functions. Variables created outside of all functions are called global variables. In this programme WIDTH, HEIGHT, x and y are examples of global variables because the statements that create them (these statements are called variable **declarations**) are not inside any function.
+In Python you can create variables either inside a function, or outside all functions. Variables created outside of all functions are called *global* variables. In this programme WIDTH, HEIGHT, x and y are examples of global variables because the statements that create them (these statements are called variable **declarations**) are not inside any function.
 
-Variables can also be created inside a function and these are called local variables. A local variable can only be used inside the function where it was created. In technical terms we say the variable has a local "scope". In fact, even if a local variable has exactly the same name as a global variable Python will treat them completely separately as two different variables. 
+Variables can also be created inside a function and these are called *local* variables. A local variable can only be used inside the function where it was created. In technical terms we say the variable has a local "scope". In fact, even if a local variable has exactly the same name as a global variable Python will treat them completely separately as two different variables. 
 
 When Python comes across a variable name inside a function it behaves differently depending on what you want to do with the variable. If you only want to *read* the value of the variable Python will look for a local variable with that name inside the function, but if it doesn't find one it will look for a global variable with that name and read the value. 
 
