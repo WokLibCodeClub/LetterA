@@ -35,8 +35,7 @@ def update():
 The Python code inside the function looks like mathematical nonsense, but to Python it means: take the present value of the variable x, add 1 to it and put this new value back in the variable x. If you remember that x is the x coordinate of the letter in the window what effect do you think this change of variable x would have on the position of the letter?
 
 
-Scope of variables
-------------------
+### Scope of variables
 
 Unfortunately if we run the code using pgzrun like this it will give an error. This is because of something called the scope of variables.
 
