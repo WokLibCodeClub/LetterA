@@ -1,43 +1,48 @@
-Using variables for coordinates
--------------------------------
+# Make a letter which moves
+
+## Using variables for coordinates
 
 To make the letter move around the screen we need to change its coordinates. These are the values in part of the screen.draw.text statement in the brackets next to ```center=```
 
-The easiest way to have coordinates which can be changed is to use variables for the x and y coordinates. You can give these any name, but here we will call them x and y. 
+The easiest way to have coordinates which can be changed is to use *variables* for the x and y coordinates. You can give these any name, but here we will call them x and y.
 
-To make variables you need to have statements like x = 0, or y = 100 in the part of the code below the WIDTH and HEIGHT statements. These statements will both create the variables x and y, and give them initial values. Because the values we are giving the new variables are numbers, Python understands that these new variables will be numerical variables.
+To make variables you need to have statements like ```x = 0```, or ```y = 100``` in the part of the code below where we set the values for ```WIDTH``` and ```HEIGHT```. These statements will both create the variables ```x``` and ```y```, and give them initial values. Because the values we are giving the new variables are numbers, Python understands that these new variables will be *numerical* variables.
 
-This code will create new variables and give them initial values which represent the centre of the window:
-```
+The code below will create new variables and give them initial values which represent the centre of the window:
+
+```python
 x = WIDTH/2
 y = HEIGHT/2
 ```
-These statements need to be placed after the WIDTH and HEIGHT statements because they use the values of WIDTH and HEIGHT in the calculation. If you placed these before the WIDTH and HEIGHT statements Python would give an error because it would be trying to do a calculation using a variable called WIDTH before you'd even told Python that there was such a variable or what its value was.
 
-One suggestion is to try this - put the two statements for x and y before the statements for WIDTH and HEIGHT, run the code using pgzrun, and see what the error is. Then, in the future, if you ever see the same error you will have a good idea what the problem is, and how to fix it.
+These statements need to be placed *after* the ```WIDTH``` and ```HEIGHT``` statements because they use the values of WIDTH and HEIGHT in the calculation. If you placed these before the ```WIDTH``` and ```HEIGHT``` statements Python would give an error because it would be trying to do a calculation using a variable called ```WIDTH``` before you'd even told Python that there was such a variable or what its value was.
 
-After creating the new variables x and y we need to change the the draw function so that the coordinates in brackets after ```center=``` will use the variable x for the x coordinate , and the variable y for the y coordinate.
+One suggestion is to try this - put the two statements for ```x``` and ```y``` before the statements for ```WIDTH``` and ```HEIGHT```, run the code using pgzrun, and see what the error is. Then, in the future, if you ever see the same error you will have a good idea what the problem is, and how to fix it.
+
+After creating the new variables x and y we need to change the the draw function so that the coordinates in brackets after ```center=``` will use the variable ```x``` for the x coordinate , and the variable ```y``` for the y coordinate.
 
 Make these changes and check if the letter displays properly.
 
-Moving the letter
------------------
+## Moving the letter
 
-We've already said that Pygame Zero looks for a function called ```draw()``` in the code, but at the same time it also looks for a function called ```update()```. If it finds one it executes ```update()``` first, then ```draw()```, and keeps repeating this sequence update, draw, update, draw 60 times a second. 
+We've already said that Pygame Zero looks for a function called ```draw()``` in the code, but at the same time it also looks for a function called ```update()```. If it finds one it executes ```update()``` first, then ```draw()``` afterwards, and keeps repeating this sequence update, draw, update, draw 60 times a second.
 
 This means that if we make changes to the x and y coordinates in the update function, Pygame Zero will immediately afterwards draw the letter with the new coordinates. This is how to make the letter move around the screen.
 
 Create the function update using this code, and put it just above the function draw:
-```
+
+```python
 def update():
     x = x + 1
 ```
-The Python code inside the function looks like mathematical nonsense, but to Python it means: take the present value of the variable x, add 1 to it and put this new value back in the variable x. If you remember that x is the x coordinate of the letter in the window what effect do you think this change of variable x would have on the position of the letter?
 
+The Python code inside the function looks like mathematical nonsense, but to Python it means: take the present value of the variable ```x```, add 1 to it and put this new value back in the variable ```x```. If you remember that ```x``` is the x coordinate of the letter in the window what effect do you think this change of variable x would have on the position of the letter?
+
+Actually, this type of calculation is done so often in Python that there is a little Python *shortcut* which achieves exactly the same thing. So instead of coding ```x = x + 1``` you can write ```x += 1``` which is a tiny bit shorter.
 
 ### Scope of variables
 
-Unfortunately if we run the code using pgzrun like this it will give an error. This is because of something called the scope of variables.
+Unfortunately if we run the code using pgzrun like this it will give an error. This is because of something called the *scope of variables*.
 
 In Python you can create variables either inside a function, or outside all functions. Variables created outside of all functions are called *global* variables. In this programme WIDTH, HEIGHT, x and y are examples of global variables because the statements that create them (these statements are called variable **declarations**) are not inside any function.
 
@@ -49,7 +54,7 @@ But if you want to *change* the value of a variable inside a function Python ass
 
 What we need is a way of telling Python that variable x inside the function update is NOT a local variable, but the same global variable which we created outside of any function. The way to do this is to add this code as the first line of the function:
 
-```
+```python
 global x
 ```
 
@@ -65,26 +70,26 @@ Now, when we run the code with pgzrun, we should see the letter moving. Or do we
 
 You probably see a white line across the screen. But if you look closely you notice that the left and right edges of the line are sloping. Try to work out what's happening before looking further down to see the explanation.
 
-![alt text](white_line.png "White line")
+![whiteline](white_line.png "White line")
 
 Every time Pygame Zero runs the update function it increases the x coordinate by 1, then it runs the draw function and draws a letter A with the new coordinates. Next time around it does exactly the same thing. BUT WE HAVEN'T TOLD IT TO DELETE THE PREVIOUS LETTER A. So it keeps drawing new letter A's on top of all the old letter A's and makes what looks like a line.
 
 We need to delete the previous letter A's before we draw a new one, and we do this by clearing the screen each time we run the update/draw functions. The way to do this is to add this code as the first line in function draw:
 
-```
+```python
 screen.clear()
 ```
 
 Don't forget to indent this.
 
-Now run the code with pgzrun and see if it makes a moving letter.
+Now **save** your code and run it with pgzrun and see if it makes a moving letter.
 
-Challenge
-=========
+## Challenge 1
+
 How would you make the letter move to the left? upwards? downwards? upwards and to the right at the same time?
 
-Challenge
-=========
+## Challenge 2
+
 How would you change the code to make the letter move faster?
 
 [Go to step 3](../Step3-control_movement)
