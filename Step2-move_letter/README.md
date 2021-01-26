@@ -72,7 +72,7 @@ You probably see a white line across the screen. But if you look closely you not
 
 ![whiteline](white_line.png "White line")
 
-<details><summary>Click arrow for explanation</summary>
+<details><summary>Click arrow for explanation</summary><br>
 
 Every time Pygame Zero runs the update function it increases the x coordinate by 1, then it runs the draw function and draws a letter A with the new coordinates. Next time around it does exactly the same thing. BUT WE HAVEN'T TOLD IT TO DELETE THE PREVIOUS LETTER A. So it keeps drawing new letter A's on top of all the old letter A's and makes what looks like a line.
 
