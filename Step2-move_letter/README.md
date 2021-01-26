@@ -72,6 +72,8 @@ You probably see a white line across the screen. But if you look closely you not
 
 ![whiteline](white_line.png "White line")
 
+<details><summary>Click arrow for explanation</summary>
+
 Every time Pygame Zero runs the update function it increases the x coordinate by 1, then it runs the draw function and draws a letter A with the new coordinates. Next time around it does exactly the same thing. BUT WE HAVEN'T TOLD IT TO DELETE THE PREVIOUS LETTER A. So it keeps drawing new letter A's on top of all the old letter A's and makes what looks like a line.
 
 We need to delete the previous letter A's before we draw a new one, and we do this by clearing the screen each time we run the update/draw functions. The way to do this is to add this code as the first line in function draw:
@@ -83,6 +85,8 @@ screen.clear()
 Don't forget to indent this.
 
 Now **save** your code and run it with pgzrun and see if it makes a moving letter.
+
+</details>
 
 ## Challenge 1
 
