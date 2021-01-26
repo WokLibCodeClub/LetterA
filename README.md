@@ -6,4 +6,8 @@ The various steps cover window size and coordinates, control of the letters usin
 
 In each step there will be challenges. You may be able to find possible solutions to these challenges by looking at code from the next step, but you'll learn much more about Python coding if you try to solve the challenges yourself first.
 
+You can find information about installing Pygame Zero on your computer and running Python projects written for Pygame Zero at this link on our github pages:
+
+[Using Pygame Zero](../../../Using-Pygame-Zero)
+
 [Go to step 1](Step1-display_letter)
