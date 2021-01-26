@@ -26,7 +26,8 @@ In this section we're going to use
 ```screen.draw.textbox``` which is very similar to ```screen.draw.rect``` but instead of drawing a box it fills the box with text or a text variable.
 
 The way to use this is to put code like this in function draw:
-```
+
+```python
 screen.draw.textbox('A', abox, color='red')
 ```
 
@@ -35,7 +36,8 @@ This uses a rectangle which has already defined - in this example it is a variab
 One important thing about ```screen.draw.textbox``` is that it automatically scales the text to fit in the rectangle. So **you can't use fontsize= with a textbox**, as the text size is controlled by the size of the rectangle. It also means if your text is long, you should make your rectangle wider than it is high to fit the text you want to display in it.
 
 There doesn't seem to be a way to display a textbox *AND* have the box drawn as well. So one way you could do this is by having two draw statements:
-```
+
+```python
 screen.draw.textbox('A', abox, color='red')
 screen.draw.rect(abox, color='red')
 ```
