@@ -3,11 +3,17 @@ Detecting a collision
 
 When we have two rectangles Pygame Zero has a built-in function to detect whether or not they are overlapping. If the two rectangle objects are held in variables abox and bbox then this code:
 
-```abox.colliderect(bbox)```
+```python
+abox.colliderect(bbox)
+```
 
 will have a value True if the rectangles are overlapping or False if they are not overlapping. Note that you would get exactly the same answer if you wrote this code instead:
 
-```bbox.colliderect(abox)``` as in both cases it simply looks at whether the boxes are overlapping.
+```python
+bbox.colliderect(abox)
+``` 
+
+as in both cases it simply looks at whether the boxes are overlapping.
 
 A good way to demonstrate this is to change the code [rect2.py](../Step6-rectangles/rect2.py) which was included in step 6, so that as we move the two rectangles around it will display some text to tell us if the boxes are overlapping or not. 
 
@@ -35,7 +41,7 @@ Download and have a look at the powerpoint file [pygame_zero_hints.pptx](pygame_
 5. We are now going to put a new **if** statement in function update. This will be slightly more complicated than the if statements we've used so far, as we want to give it two possible outcomes.
 
    The if statement will look something like this (pay special attention to how the indents work):
-   ```
+   ```python
    if something or other is true:
        do one thing
    else:
