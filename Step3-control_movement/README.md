@@ -6,7 +6,7 @@ Before getting on to controlling the movement of the letter around the screen he
 To change the colour you can add this to the code:
 
 
-```
+```python
 def draw():
     screen.clear()
     screen.draw.text('A', center=(x, y), color='red')
@@ -16,7 +16,7 @@ Again, we have to use the American spelling "color" not the British "colour". Mo
 
 Here is code for a dark purple coloured letter A.
 
-```
+```python
 def draw():
     screen.clear()
     screen.draw.text('A', center=(x, y), color=(128, 0, 128))
@@ -24,7 +24,7 @@ def draw():
 
 To change the size of the letter add a fontsize parameter. Without any fontsize parameter the size will be 24. This code will make a bigger letter A:
 
-```
+```python
 def draw():
     screen.clear()
     screen.draw.text('A', center=(x, y), color=(128, 0, 128), fontsize=60)
@@ -36,12 +36,12 @@ Changing the text that is drawn
 You don't need to use a letter A for this code. You can put any text inside the quotes and it will be drawn on the screen. But you can also use a text variable here.
 
 If you make a text variable (do this in the top part of the programme where the other variables are being created), for example with:
-```
+```python
 c = 'cabbage'
 ```
 then change the draw function to:
 
-```
+```python
 def draw():
     screen.clear()
     screen.draw.text(c, center=(x, y), color=(128, 0, 128), fontsize=60)
@@ -59,11 +59,11 @@ This uses a Python statement called (not surprisingly) an **if** statement.
 
 To make this work we first need some code which will tell us if the right arrow is being pressed, then we write some code to say what should happen when the right arrow is being pressed.
 
-An if statement starts with the word **if**, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the if statement must be indented.
+An ```if``` statement starts with the word **if**, followed by what it is you want to test, followed by a colon. Then on the next lines you write code for everything that you want to happen if what you want to test is true. VERY IMPORTANT: everything that you want to happen because of the ```if``` statement must be indented.
 
-Here is how the update function would look with an if statement:
+Here is how the update function would look with an ```if``` statement:
 
-```
+```python
 def update():
     global x
     if keyboard.right:
