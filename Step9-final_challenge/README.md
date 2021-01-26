@@ -13,19 +13,25 @@ To give you one suggestion: maybe when the letters collide the game could stop a
 This code is very similar to the code in [textbox1.py](textbox1.py). The most important difference is in function update. When we had code that displayed text in the window to show whether there was a collision or not we wanted to be able to keep moving the letters using the keys, even if there was a collision. But now, when there is a collision, we want the letters to stop moving. 
 
 This is done by making changes in the if statement which tests for a collision. If there is a collision we want the things to happen which mean the game is ending, but if there is no collision we want to continue moving the letters with the keys. So in this if statement the code which comes after 
-```
+
+```python
 if collision:
 ```    
+
 will be for things that happen when the game ends, while the code which comes after 
-```
+
+```python
 else:
-```    
+```  
+
 will be what happens where there is no collision - which is that the letters can continue to be moved. So to achieve this we take all the code which moves the letters, and the code which sets the coordinates for the centres of the two rectangles, INDENT it all, and put it directly underneath ```else:```, so it becomes part of the first if statement. Notice that we now have if statements *INSIDE* other if statements. This is very normal in coding, and in Python it is the indenting which enables Python to keep track of which code is part of which if statement.
 
 You will see that under the line 
-```
+
+```python
 if collision:
 ```
+
 there is another if statement. This is checking whether keyboard key x is pressed. If it is pressed then the code goes on to the next line which is ```exit()``` which is the command to quit the programme.
 
 Remember that when we run this code with Pygame Zero it is constantly running function update, then function draw, so if the letters are colliding, every time it runs function update it will go into the first part of this if statement and check if key x is pressed. If key x is pressed the programme will exit, but if key x is not pressed it won't do anything.
@@ -65,5 +71,5 @@ The final challenge
 
 The next part is up to you. Using the different parts of Pygame Zero in this project you will be able to adapt your code to do many different things, and you can look at the full instructions for Pygame Zero, with all the different possibilities, on the webpage:
 
-[http://pygame-zero.readthedocs.io/en/stable/index.html](http://pygame-zero.readthedocs.io/en/stable/index.html)
+[https://pygame-zero.readthedocs.io/en/latest/index.html](https://pygame-zero.readthedocs.io/en/latest/index.html)
 
