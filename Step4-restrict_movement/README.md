@@ -13,7 +13,7 @@ We can see that if the letter is at the right edge of the window its x coordinat
 
 As with all coding there are many different ways of getting the same result but a way of getting this result is to use the **if** statement to check for *two* conditions at the same time using the Python key work **and**. And one good way of arranging this is to check if the right arrow is being pressed **AND** if the letter is not outside the window to the right. If it is not outside the window to the right then the x coordinate will be 639 or less. So our if statement becomes:
 
-```
+```python
 if keyboard.right and x <= 639:
     x = x + 1
 ```
@@ -22,7 +22,7 @@ The code ```<=``` means 'is less than or equal to'. So the if statement will inc
 
 If you set up the code like this, then decided to change the size of your window it might not work properly anymore, because the coordinate of the right edge of the window might not be 639 any more. So a better way of writing the code is to make use of the global variable WIDTH, which is equal to 640 is this example code. You can draw a diagram to show yourself that whatever you changed the WIDTH to, the x coordinate of the right edge of the window would ALWAYS be one less than the value of WIDTH. The if statement then becomes:
 
-```
+```python
 if keyboard.right and x < WIDTH:
     x = x + 1
 ```
