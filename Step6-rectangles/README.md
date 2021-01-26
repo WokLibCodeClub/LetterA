@@ -9,25 +9,33 @@ A Rectangle in Pygame Zero is a box which can be drawn in the window. To make a 
 
 To do this we have to use code like this:
 
-```mybox = Rect(1st number, 2nd number, 3rd number, 4th number)```
+```python
+mybox = Rect(1st number, 2nd number, 3rd number, 4th number)
+```
 
 In this code mybox is the name of the variable, Rect is a Pygame Zero key word which tells us the variable is going to contain a Rectangle object, then we have to give four numbers in brackets to define our rectangle. The first number is the x coordinate of the left edge of the rectangle, the second number is the y coordinate of the top edge of the rectangle, the third number is the width of the rectangle in pixels, and the fourth number is the height of the rectangle in pixels. In Python the numbers in brackets in code like this are called parameters.
 
 So if my code was
 
-```mybox = Rect(10, 20, 40, 30)```
+```python
+mybox = Rect(10, 20, 40, 30)
+```
 
 this would make a rectangle object called mybox with the left edge at x coordinate 10, the top edge at y coordinate 20, and 40 pixels wide and 30 pixels high. Note that we've only *created* a rectangle object - we haven't done anything about *drawing* it in the window yet.
 
 To make the rectangle move we have to be able to change the x and y coordinates. We can do this with a statement like this:
 
-```mybox.center=(100, 150)```
+```python
+mybox.center=(100, 150)
+```
 
 Note we have to use the American spelling of center. This would set the centre of the box at coordinates x = 100, y = 150. Or we could use numerical variables for the x and y coordinates, as we did for the letters A and B. But we still haven't drawn it in the window.
 
 To draw it in the window we add a statement into the draw function like this:
 
-```screen.draw.rect(mybox, color='red')```
+```python
+  screen.draw.rect(mybox, color='red')
+  ```
 
 This tells Pygame Zero to draw a box coloured red, with the height and width which we set when we created the mybox variable, and at the x and y location which we specified last time we changed the coordinates. You can put any colour here, but you have to include a colour or you will get an error. You could also use an RGB type of colour with color=(50, 100, 150) for example.
 
